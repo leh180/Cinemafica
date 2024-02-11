@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <title>Cadastro - Cinemafica</title>
+</head>
+<body>
+        <section class="area-login">
+            <div class="login">
+                <div>
+                    <img src ="./img/CINEMAFICA.png">
+                </div>
+                <form id="cadastroForm">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="placeholder-box" name="nome" placeholder="Nome de usuário" autofocus required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="placeholder-box" name="email" placeholder="E-mail" required>
+                    <label for="senha">Senha:</label>
+                    <input type="password" class="placeholder-box" name="senha" placeholder="Senha" required>
+                    <label for="generos">Gêneros favoritos:</label>
+                    <div class="checkbox-container">
+                        <div class="checkbox-column">
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="animacao"><span class="custom-checkbox"></span>Animação</label>
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="aventura"><span class="custom-checkbox"></span>Aventura</label>
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="comedia"><span class="custom-checkbox"></span>Comédia</label>
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="documentario"><span class="custom-checkbox"></span>Documentário</label>
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="drama"><span class="custom-checkbox"></span>Drama</label>
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="familia"><span class="custom-checkbox"></span>Família</label>
+                        </div>
+                        <div class="checkbox-column">
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="fantasia"><span class="custom-checkbox"></span>Fantasia</label>
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="faroeste"><span class="custom-checkbox"></span>Faroeste</label>
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="guerra"><span class="custom-checkbox"></span>Guerra</label>
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="historia"><span class="custom-checkbox"></span>História</label>
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="misterio"><span class="custom-checkbox"></span>Mistério</label>
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="musical"><span class="custom-checkbox"></span>Musical</label>
+                        </div>
+                        <div class="checkbox-column">
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="polcial"><span class="custom-checkbox"></span>Policial</label>
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="romance"><span class="custom-checkbox"></span>Romance</label>
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="scifi"><span class="custom-checkbox"></span>Scifi</label>
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="televisivo"><span class="custom-checkbox"></span>Televisivo</label>
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="terror"><span class="custom-checkbox"></span>Terror</label>
+                        <label class="checkbox-label"><input type="checkbox" name="generos" value="thriller"><span class="custom-checkbox"></span>Thriller</label>
+                        </div>
+                    </div>
+                    <label for="data">Data de nascimento:</label>
+                    <input type="date" class="placeholder-box" name="data" placeholder="Data de nascimento" required></br>
+                    <input type="submit" value="Cadastrar-se">
+                </form>
+                <p>Já possui um cadastro?<a href="login.html">Entrar</a></p>
+            </div>
+        </section>
+
+    <style>
+    /*--------- Responsividade ---------*/
+    
+    @media(max-width: 820px) {
+    .footerContainer {
+    width: 100%;
+    }
+    
+    .footernav ul {
+    flex-direction: column;
+    }
+    
+    .footernav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    }
+    }
+    </style>
+</body>
+</html>
