@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <script src="./javaScript/login.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <section class="area-login">
+        <div class="login">
+            <div>
+                <img src ="./img/CINEMAFICA.png"> <!--- logo ---->
+            </div>
+            <form class="form--register" action="/usuario/login" method="post" id="form-add">
+                <label for="email">Email:</label>
+                <input type="email" class="input--register" name="Email" value="Email" required><br>
+                <label id="error-message" for="senha">Senha:</label>
+                <input type="password" class="input--register" name="Senha" value="Senha" required><br>
+                <input type="submit" value="Login" class="input--main__style input--button">
+            </form>
+            <p>Não possui cadastro?<a href="cadastro.html"> Cadastrar-se</a></p>
+        </div>
+    </section>
+</body>
+
+<style>
+    /*--------- Responsividade ---------*/
+    
+    @media(max-width: 820px) {
+    .footerContainer {
+    width: 100%;
+    }
+    
+    .footernav ul {
+    flex-direction: column;
+    }
+    
+    .footernav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    }
+    }
+    </style>
+    
+</html>
